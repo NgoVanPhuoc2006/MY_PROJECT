@@ -1,4 +1,4 @@
-/* Reset & tổng thể */
+
 body {
     font-family: Arial, sans-serif;
     background: #eeeeee;
@@ -7,26 +7,26 @@ body {
     position: relative;
 }
 
-/* Header & Logo */
+
 .header {
-    position: fixed;        /* Cố định logo trên cùng bên trái */
+    position: fixed;       
     top: 0;
     left: 0;
-    z-index: 999;           /* Luôn nổi trên */
+    z-index: 999;           
 }
 
 .logo {
-    width: 140px;            /* Tăng size tùy thích */
+    width: 140px;           
     height: auto;
     display: block;
     margin: 0;
     padding: 0;
 }
 
-/* Khung chatbot */
+
 .container {
     max-width: 550px;
-    margin: 120px auto 0 auto; /* Đẩy xuống dưới logo một khoảng */
+    margin: 120px auto 0 auto; 
     padding: 30px;
     background: white;
     border-radius: 15px;
@@ -34,13 +34,12 @@ body {
     text-align: center;
 }
 
-/* Tiêu đề */
 .container h1 {
     font-size: 28px;
     margin-bottom: 20px;
 }
 
-/* Textarea */
+
 textarea {
     width: 100%;
     padding: 12px;
@@ -51,7 +50,7 @@ textarea {
     resize: vertical;
 }
 
-/* Button */
+
 button {
     padding: 12px 24px;
     background: #1e90ff;
@@ -67,7 +66,6 @@ button:hover {
     background: #006fce;
 }
 
-/* Kết quả */
 .result {
     margin-top: 25px;
     font-size: 20px;
@@ -75,7 +73,6 @@ button:hover {
     color: #333;
 }
 
-/* Danh sách sinh viên */
 .student-list {
     list-style-type: none;
     padding: 0;
@@ -91,13 +88,12 @@ button:hover {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Danh sách sinh viên: hover */
+
 .student-list li:hover {
     background-color: #d1e7ff;
     cursor: pointer;
 }
 
-/* Phần Đánh giá */
 .feedback {
     margin-top: 30px;
     text-align: center;
