@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title> Phân Loại Cảm Xúc</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!-- Logo góc trái trên cùng -->
+    <div class="header">
+        <img src="{{ url_for('static', filename='logohcmus.png') }}" alt="Logo HCMUS" class="logo">
+    </div>
+
+    <!-- Phần giao diện chatbot -->
+    <div class="container">
+        <h1>Nghiên Cứu và Phát Triển Ứng Dụng Xử lý ngôn ngữ tự nhiên Tiếng Việt
+        </h1>
+        <form method="post">
+            <textarea name="input_text" placeholder="Nhập câu nói ở đây..." rows="4" required></textarea>
+            <button type="submit">Phân loại</button>
+        </form>
+        {% if result %}
+            <div class="result">{{ result }}</div>
+        {% endif %}
+        <h2>Danh Sách Sinh Viên thực hiện</h2>
+    <ul class="student-list">
+        <li>Bùi Nam Hải</li>
+        <li>Ngô Văn Phước</li>
+        <li>Phan Minh Phúc</li>
+    </ul>
+    <div class="feedback">
+        <h3>Đánh giá về Chatbot</h3>
+        <p>Chúng tôi rất mong nhận được phản hồi của bạn để cải thiện hệ thống. Vui lòng điền vào mẫu đánh giá dưới đây:</p>
+        <a href="https://forms.gle/PadcnAX2SGM8vFYC7" target="_blank" class="feedback-link">Điền vào Google Form đánh giá</a>
+    </div>
+    <div class="contact-info">
+        <h3>Thông tin liên hệ</h3>
+        <p>Mọi thắc mắc hoặc trao đổi về nghiên cứu và phát triển hệ thống, xin vui lòng liên hệ qua:</p>
+        <p>Email: <a href="mailto:nghiencuu.nlp@hcmus.edu.vn">nghiencuu.nlp@hcmus.edu.vn</a></p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,129 @@
+/* Reset & tổng thể */
+body {
+    font-family: Arial, sans-serif;
+    background: #eeeeee;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+/* Header & Logo */
+.header {
+    position: fixed;        /* Cố định logo trên cùng bên trái */
+    top: 0;
+    left: 0;
+    z-index: 999;           /* Luôn nổi trên */
+}
+
+.logo {
+    width: 140px;            /* Tăng size tùy thích */
+    height: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+/* Khung chatbot */
+.container {
+    max-width: 550px;
+    margin: 120px auto 0 auto; /* Đẩy xuống dưới logo một khoảng */
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Tiêu đề */
+.container h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Textarea */
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    resize: vertical;
+}
+
+/* Button */
+button {
+    padding: 12px 24px;
+    background: #1e90ff;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #006fce;
+}
+
+/* Kết quả */
+.result {
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Danh sách sinh viên */
+.student-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.student-list li {
+    background-color: #f4f4f4;
+    margin: 8px 0;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Danh sách sinh viên: hover */
+.student-list li:hover {
+    background-color: #d1e7ff;
+    cursor: pointer;
+}
+
+/* Phần Đánh giá */
+.feedback {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.feedback h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.feedback p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.feedback-link {
+    display: inline-block;
+    background-color: #1e90ff;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.feedback-link:hover {
+    background-color: #006fce;
+}
