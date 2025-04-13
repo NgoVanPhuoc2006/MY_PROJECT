@@ -4,8 +4,6 @@ import torch
 import torch.nn.functional as F
 
 app = Flask(__name__)
-
-# Load mô hình
 model_name = "nlptown/bert-base-multilingual-uncased-sentiment"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModelForSequenceClassification.from_pretrained(model_name)
@@ -31,7 +29,5 @@ def home():
         text = request.form["input_text"]
         result = classify_sentiment(text)
     return render_template("index.html", result=result)
-
-# Dùng cho chạy local, không ảnh hưởng khi deploy trên Render
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
